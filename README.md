@@ -14,7 +14,7 @@
 - Decrypt use `hdecrypt(crypted_content,passphrase);`
 - in PHP, use `AES::hencrypt()` and `AES::hdecrypt()`
 
-Note: Everytime you encrypt with `hencrypt` the result never the same, but don't worries, you can decrypt all of that with right passphrase!
+Note: Everytime you encrypt with `hencrypt()` the result never the same, but don't worries, you can decrypt all of that with right passphrase!
 
 
 ### License
