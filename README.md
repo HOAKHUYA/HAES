@@ -6,6 +6,15 @@
 - NodeJS
 - Javascript
 - PHP 5+
+## Installation
+- Download latest releases at : [HAES/releases/latest](https://github.com/HOAKHUYA/HAES/releases/latest)
+
+## Getting Started
+Encrypt anything, files , html, database, and plain text with the `hencrypt(content,passphrase);`
+Decrypt use `hdecrypt(crypted_content,passphrase)`
+in PHP, use `AES::hencrypt()` and `AES::hdecrypt()`
+
+
 
 ## License
 - Chris Veness 2005-2014 / MIT Licence
