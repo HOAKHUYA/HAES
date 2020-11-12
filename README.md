@@ -4,5 +4,5 @@ HAES has supported for platform's as pure, with self-contained, native executabl
 
 ## For
 - NodeJS
-- Javascript (pure)
+- Javascript
 - PHP 5+
