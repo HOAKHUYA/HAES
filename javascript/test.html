@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+	<title>HOAKHUYA AES</title>
+<script src="./haes.js"></script>
+	
+	</head>
+<body id="test" style=" background-color: #132d2ded; color: #d1f6da;font-family: Tahoma,Arial, Helvetica, sans-serif; ">
+<div style="max-width: 750px; margin: 0 auto; text-align: center;    margin-top: 30px;margin-bottom: 90px;">
+	
+<textarea rows="30" cols="100" name="content" id="content" style=" background: #282828; color: #a0fdff; ">Hello word</textarea><br />
+<div style="text-align: start; margin-left: 20px; margin-top: 15px; margin-bottom: 10px;">
+<label for="passphrase" style=" margin-right: 10px; ">Passphrase</label><input type="text" name="passphrase" value="hello" id="passphrase"/>
+</div>
+<hr>
+<input type="submit" onclick="haesEn()" id="haesEn" value="Encrypt" name="submit">
+<input type="submit" onclick="haesDe()" id="haesDe" value="Decrypt" name="submit">
+
+</div>
+<script type="text/javascript" charset="utf-8">
+	function haesEn(){
+		var content = document.getElementById('content').value;
+		var passphrase = document.getElementById('passphrase').value;
+		document.getElementById('content').value = hencrypt(content,passphrase);
+	}
+	function haesDe(){
+		var content = document.getElementById('content').value;
+		var passphrase = document.getElementById('passphrase').value;
+		document.getElementById('content').value = hdecrypt(content,passphrase);
+	}
+</script>
+</body>
+</html>
